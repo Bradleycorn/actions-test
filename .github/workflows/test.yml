@@ -24,6 +24,6 @@ jobs:
         run: echo "test" >> README.md
 
       - name: Commit Changes
-        uses: actions-js/push@v1
+        uses: actions-js/push@master
         with:
           message: ${{ format('Actions{0} Publish Version {1}', ':', inputs.version) }}
