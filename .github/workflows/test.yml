@@ -27,3 +27,4 @@ jobs:
         uses: actions-js/push@master
         with:
           message: ${{ format('Actions{0} Publish Version {1}', ':', inputs.version) }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
